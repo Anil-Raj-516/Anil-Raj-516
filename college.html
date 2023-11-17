@@ -1,0 +1,77 @@
+- 👋 Hi, I’m @Anil-Raj-516
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+Anil-Raj-516/Anil-Raj-516 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>College Website</title>
+    <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.classList.contains('active')) {
+                section.classList.remove('active');
+            } else {
+                const activeSection = document.querySelector('section.active');
+                if (activeSection) {
+                    activeSection.classList.remove('active');
+                }
+                section.classList.add('active');
+            }
+        }
+    </script>
+
+    <header>
+        <h1>Welcome to Our College</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleSection('about')">About</a></li>
+                <li><a href="#" onclick="toggleSection('programs')">Programs</a></li>
+                <li><a href="#" onclick="toggleSection('faculty')">Faculty</a></li>
+                <!-- Add more navigation links -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" onclick="toggleSection('about')">
+            <h2>About Our College</h2>
+            <p>This is a paragraph about our college...</p>
+            <img src="college-image.jpg" alt="College Image">
+        </section>
+
+        <section id="programs" >
+            <h2>Programs Offered</h2>
+            <ul>
+                <li>Computer Science</li>
+                <li>Engineering</li>
+                <li>Business Administration</li>
+                <!-- Add more program details -->
+            </ul>
+        </section>
+
+        <section id="faculty">
+            <h2>Our Faculty</h2>
+            <p>Meet our experienced faculty members...</p>
+        </section>
+        <!-- Add more sections as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BVSR. All Rights Reserved by Anil.</p>
+    </footer>
+
+</body>
+</html>
